@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #receipt {
+            border-top: 50px solid #990000;
+            border-bottom: 50px solid #990000;
+        }
+
+        .receipt {
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .receipt .receipt-container .receipt-title {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .receipt-body .receipt-logo img {
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .receipt .receipt-container .receipt-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .receipt-body-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .receipt-body-details .receipt-date-reference .date,
+        .receipt-body-details .receipt-date-reference .reference {
+            border-bottom: 1px solid #000;
+            width: 250px;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        .receipt-body-details .receipt-date-reference .reference {
+            margin-top: 5rem;
+        }
+
+        .recept-body-bill-payment {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .recept-body-bill-payment .bill-to .bill {
+            border-bottom: 1px solid #000;
+            width: 500px;
+            text-transform: uppercase;
+        }
+
+        .recept-body-bill-payment .payment .payment-details {
+            border-bottom: 1px solid #000;
+            width: 700px;
+            text-transform: uppercase;
+        }
+       table{
+        max-width: 100%;
+        width: 1400px;
+       }
+       .table-data{
+        margin-bottom: 1rem;
+       }
+        .table-data table,
+        .table-data th,
+        .table-data td {
+            border: 1px solid black;
+            border-collapse: collapse; 
+        }
+        .subtotal-num,
+        .total-paid-border,
+        .balance-border,
+        .total-border{
+            border-bottom: 1px solid;
+    width: 140px;
+        }
+        .total-paid-amount{
+            width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="receipt">
+        <div class="receipt">
+            <div class="receipt-container">
+                <div class="receipt-body">
+                    <div class="receipt-title">
+                        <h1>Receipt</h1>
+                    </div>
+                    <div class="receipt-logo">
+                        <img src="img/quippy-logo.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="receipt-body-details">
+                    <div class="receipt-details">
+                        <h2>Quippy Quill LLC</h2>
+                        <h2>300 DELAWARE AVE. SUITE 210 #451</h2>
+                        <h2>WILMINGTON, DEL 19801, UNITED STATES</h2>
+                        <h2>(302) 295-2278</h2>
+                        <h2>INFO@THEQUIPPYQUILL.COM</h2>
+                    </div>
+                    <div class="receipt-date-reference">
+                        <h2 class="date">Date</h2>
+                        <h2 class="reference">Reference No.</h2>
+                    </div>
+                </div>
+                <div class="recept-body-bill-payment">
+                    <div class="bill-to">
+                        <h4 class="bill">Bill to</h4>
+                        <p>Client Name: Robert Williams</p>
+                        <p>Client Address: A.S Fortuna, Banilad</p>
+                        <p>Client Contact Number: 302 295 2278</p>
+                        <p>Email: robertw@gmail.com></p>
+                    </div>
+                    <div class="payment">
+                        <h4 class="payment-details">Payment Details</h4>
+                        <p>Mode of Payment: Bank Transfer</p>
+                        <p>Payment Method: Wire</p>
+                        <p>Type of Payment: Installment Plan/Initial Payment</p>
+                    </div>
+
+
+                </div>
+                <div class="table-data">
+                    <table>
+                        <tr>
+                            <th>DESCRIPTION</th>
+                            <th>QTY</th>
+                            <th>AMOUNT</th>
+                            <th>TOTAL</th>
+                        </tr>
+                        <tr>
+                            <td>STANDARD LEAF (BLACK & WHITE)</td>
+                            <td></td>
+                            <td></td>
+    
+                            <td style="text-align: right;">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>KNIGHT</td>
+                            <td></td>
+                            <td></td>
+    
+                            <td style="text-align: right;">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Inclusions:</td>
+                            <td></td>
+                            <td></td>
+    
+                            <td style="text-align: right;">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Interior Layout</td>
+                            <td></td>
+    
+                            <td></td>
+                            <td style="text-align: right;">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Custom Trim Size Options</td>
+                            <td></td>
+    
+                            <td></td>
+                            <td style="text-align: right;">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Book Copies</td>
+                            <td></td>
+    
+                            <td></td>
+                            <td style="text-align: right;">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Registarion Services</td>
+                            <td></td>
+    
+                            <td></td>
+                            <td style="text-align: right;">0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing Features</td>
+                            <td></td>
+    
+                            <td></td>
+                            <td style="text-align: right;">0.00</td>
+                        </tr>
+                    </table>              
+                </div>
+               <div class="refund-policy">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>SUBTOTAL</td>
+                        <td class="subtotal-num" style="text-align: right;">0.00</td>
+                    </tr>
+                    <tr>
+                        <td>REFUND / CANCEL POLICY</td>
+                        <td></td>
+                        <td class="total-paid-amount">TOTAL PAID AMOUNT</td>
+
+                        <td class="total-paid-border" style="text-align: right;"></td>
+                    </tr>
+                    <tr>
+                        <td>1. Should Quippy Quill commit any breach in this agreement, the client has the
+                            right to file for a refund. However, the client is obliged to pay, whichever is
+                            higher, $200 as an administrative fee or 10% of the total purchase amount or
+                            can be deducted from the total paid amount.</td>
+                        <td></td>
+                        <td></td>
+
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2. Quippy Quill is not liable to any refund if the fulfillment process has
+                            commenced.</td>
+                        <td></td>
+
+                        <td>BALANCE</td>
+                        <td class="balance-border" style="text-align: right;"></td>
+                    </tr>
+                    <tr>
+                        <td>3. Quippy Quill is not liable to any refund when sixty (60) days have lapsed</td>
+                        <td></td>
+
+                        <td>TOTAL</td>
+                        <td class="total-border" style="text-align: right;"></td>
+                    </tr>
+                    <tr>
+                        <td>4. Should the client request to terminate or breach the agreement, Quippy
+                            Quill is not liable for any refund.</td>
+                        <td></td>
+
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5. Any party who wishes to terminate/cancel this agreement should inform
+                            the other party in writing, thirty (30) days prior to its effective date.</td>
+                        <td></td>
+
+                        <td></td>
+                        <td</td>
+                    </tr>
+                    <tr>
+                        <td>6. If both parties wish to terminate this agreement, no refund should be given
+                            to any party</td>
+                        <td></td>
+
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7. The client is eligible for a refund within ten (10) working days from the
+                            commencement of the purchased service (s).</td>
+                        <td></td>
+
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8. Quippy Quill will provide a monthly update to be sent to the client for
+                            transparency under Delaware Code Title 6, Chapter 25.</td>
+                        <td></td>
+
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>  
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
